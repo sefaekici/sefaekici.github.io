@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: black;
+}
+
+/*header*/
+#header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header #navbar {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header #navbar h2 {
+  font-family: "Lobster", cursive;
+  font-size: 2em;
+}
+
+#header #navbar ul {
+  display: flex;
+}
+
+.resume-link {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5rem;
+  border: 3px solid #1c2833;
+  border-radius: 10px;
+  padding: 1rem;
+  color: black;
+  transition: color 0.3s, background-color 0.3s, border 0.3s;
+}
+
+.resume-link:hover {
+  color: #fff;
+  background-color: #1c2833;
+  border: 5px solid #1c2833;
+}
+
+ul li {
+  list-style: none;
+  margin: 20px;
+}
+
+ul li .navbar-links {
+  font-size: 1.5em;
+  font-family: "Inconsolata", monospace;
+  color: black;
+}
+
+ul li .navbar-links:hover {
+  border-bottom: 4px solid #1c2833;
+}
+
+/*section profile */
+
+#about {
+  width: 100%;
+  min-height: 550px;
+  background-color: #1c2833;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.profile h4 {
+  opacity: 0.7;
+}
+
+.profile-head {
+  margin: 0.25rem;
+  font-family: "Inconsolata", monospace;
+  color: #fff;
+}
+
+.profile-head:hover {
+  color: #28b463;
+}
+
+.profile-image {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+  transition: width 1s, height 1s;
+}
+.profile-image:hover {
+  width: 370px;
+  height: 370px;
+}
+
+.about-person {
+  width: 100%;
+  min-height: 330px;
+  background: #fff;
+  font-size: 2rem;
+  font-family: "Inconsolata", monospace;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-person h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-person h4:hover {
+  color: #28b463;
+}
+
+.technologies {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  background-color: #1c2833;
+  border-radius: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.5s, height 0.5s;
+}
+
+.card:hover {
+  width: 220px;
+  height: 220px;
+}
+
+.card h5 {
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+/*contact section*/
+#contact {
+  width: 100%;
+  min-height: 150px;
+  background-color: #1c2833;
+}
+
+/*media querys*/
+@media screen and (max-width: 1000px) {
+  .profile h4 {
+    opacity: 0.8;
+    font-size: 0.9rem;
+  }
+  .technologies {
+    flex-direction: column;
+  }
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #header {
+    height: 220px;
+  }
+  .profile-image {
+    width: 300px;
+    height: 300px;
+  }
+  .profile-image:hover {
+    width: 330px;
+    height: 330px;
+  }
+  .profile h4 {
+    opacity: 1;
+    font-size: 0.7rem;
+  }
+  #header #navbar {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .profile {
+    padding: 0.8rem;
+  }
+
+  .profile-image {
+    width: 240px;
+    height: 240px;
+  }
+  .profile-image:hover {
+    width: 250px;
+    height: 250px;
+  }
+  .profile h4 {
+    opacity: 1;
+    font-size: 0.53rem;
+  }
+}
