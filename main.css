@@ -173,6 +173,9 @@ ul li .navbar-links:hover {
 
 /*media querys*/
 @media screen and (max-width: 1000px) {
+  #about {
+    min-height: 450px;
+  }
   .profile h4 {
     opacity: 0.8;
     font-size: 0.9rem;
