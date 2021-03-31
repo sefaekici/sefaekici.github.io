@@ -9,7 +9,6 @@
 html,
 body {
   height: 100%;
-  background-color: black;
 }
 
 /*header*/
@@ -51,7 +50,7 @@ body {
 }
 
 .resume-link:hover {
-  color: #fff;
+  color: #28b463;
   background-color: #1c2833;
   border: 5px solid #1c2833;
 }
@@ -137,6 +136,7 @@ ul li .navbar-links:hover {
 
 .technologies {
   width: 90%;
+  min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -166,11 +166,28 @@ ul li .navbar-links:hover {
 
 /*contact section*/
 #contact {
+  margin-top: 2rem;
   width: 100%;
-  min-height: 150px;
+  min-height: 100px;
   background-color: #1c2833;
+  display: flex;
+}
+.contact-links {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.contact-card i {
+  color: white;
 }
 
+.contact-card i:hover {
+  opacity: 0.6;
+}
 /*media querys*/
 @media screen and (max-width: 1000px) {
   #about {
